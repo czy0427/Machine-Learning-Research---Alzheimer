@@ -35,7 +35,7 @@ def draw_confusion_matrix(y, yhat, classes, name):
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
     plt.tight_layout()
-    path='/home/intern/database/plots/' + name + '.png'
+    path='/home/intern/summer_2021/database/plots/' + name + '.png'
     plt.savefig(path)
 
 def classifier_metrics(ytest, ypred, name="", average='binary'):
