@@ -46,6 +46,10 @@ def classifier_metrics(ytest, ypred, name="", average='binary'):
     print("F-1 score for %s: %f" %(name, f1_score(ytest, ypred, average=average)))
 
 def final_svm(train_path, val_path, seg_feat_path, trial, feat_name, test_set_path):
+#in this function, we would receive path to MFCC numpy array from different trials,
+#apply svm, and produce frame, segment, speaker level prediction
+#then apply the trial model on the test set,
+#store the test set prediction in a NPY file
 
     X_train=np.array([])
     y_train=[]
@@ -155,7 +159,7 @@ def final_svm(train_path, val_path, seg_feat_path, trial, feat_name, test_set_pa
 
 
     #model
-    svm=LinearSVC(C=0.001,random_state=42,max_iter=100,verbose=True)
+    svm=LinearSVC(C=0.001,random_state=42,max_iter=1000,verbose=True)
     clf = CalibratedClassifierCV(svm)
     clf.fit(X_train, y_train[:,2].astype(int))
     y_proba = clf.predict_proba(X_test)
@@ -253,6 +257,10 @@ def final_svm(train_path, val_path, seg_feat_path, trial, feat_name, test_set_pa
 
 
 def final_test(test_set_path,trial1,trial2,trial3, out_path):
+# this function is to get the averaging prediction of test set
+# we read in predictions from 3 trials, take the average on frame level
+# then apply same method to obtain speaker level prediction
+    
     #read 3 trials of test set prediction, take average, got the test_pred
     X1=np.load(trial1)
     X2=np.load(trial2)
