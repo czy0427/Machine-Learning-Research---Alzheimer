@@ -1,0 +1,9 @@
+$ cat .gitignore
+*.asv
+*.pyc
+*~
+*.log
+*.wav
+*.pfmt
+*.praatcc
+VQual_Feature_Extraction_160515/

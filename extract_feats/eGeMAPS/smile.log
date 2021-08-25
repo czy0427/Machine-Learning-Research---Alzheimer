@@ -1,0 +1,32 @@
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] SMILExtract: openSMILE starting!
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] SMILExtract: config file is: /home/intern/summer_2021/tools/opensmile/config/egemaps/v01b/eGeMAPSv01b.conf
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] cComponentManager: successfully registered 103 component types.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'gemapsv01b_logSpectral': logSpecFloor = -140.00  (specFloor = 1.000000e-14)
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'egemapsv01b_logSpectral_flux': logSpecFloor = -140.00  (specFloor = 1.000000e-14)
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'lldhtksink': No filename given, disabling this sink component.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'lldarffsink': No filename given, disabling this sink component.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'arffsink': No filename given, disabling this sink component.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'csvsink': No filename given, disabling this sink component.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] instance 'htksink': No filename given, disabling this sink component.
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] cComponentManager: successfully finished createInstances (77 component instances were finalised, 1 data memories were finalised)
+[ 23.08.2021 - 16:18:43 ]
+    (MSG) [2] cComponentManager: starting single thread processing loop
+[ 23.08.2021 - 16:18:45 ]
+    (WRN) [2] cComponentManager: The following component(s) could not perform any work because destination levels are full but no other component performed any work either: lldconcat. Processing will possibly be incomplete. For more details, enable the execDebug option of cComponentManager.
+[ 23.08.2021 - 16:18:45 ]
+    (WRN) [2] cComponentManager: The following component(s) could not perform any work because destination levels are full but no other component performed any work either: lldconcat. Processing will possibly be incomplete. For more details, enable the execDebug option of cComponentManager.
+[ 23.08.2021 - 16:18:45 ]
+    (WRN) [2] cComponentManager: The following component(s) could not perform any work because destination levels are full but no other component performed any work either: lldconcat. Processing will possibly be incomplete. For more details, enable the execDebug option of cComponentManager.
+[ 23.08.2021 - 16:18:45 ]
+    (MSG) [2] cComponentManager: Processing finished! System ran for 3725 ticks.
